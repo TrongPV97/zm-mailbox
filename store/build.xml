@@ -47,25 +47,25 @@
     </exec>
   </target>
   <target name="stop-webserver">
-    <exec executable="zmmailboxdctl">
+    <!-- <exec executable="zmmailboxdctl">
       <arg value="stop"/>
-    </exec>
+    </exec> -->
     <antcall target="imapd-control">
       <param name="action" value="stop"/>
     </antcall>
   </target>
   <target name="start-webserver">
-    <exec executable="zmmailboxdctl">
+    <!-- <exec executable="zmmailboxdctl">
       <arg value="start"/>
-    </exec>
+    </exec> -->
     <antcall target="imapd-control">
       <param name="action" value="start"/>
     </antcall>
   </target>
   <target name="restart-webserver">
-    <exec executable="zmmailboxdctl">
+    <!-- <exec executable="zmmailboxdctl">
       <arg value="restart"/>
-    </exec>
+    </exec> -->
     <antcall target="imapd-control">
       <param name="action" value="restart"/>
     </antcall>
